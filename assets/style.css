@@ -39,3 +39,41 @@
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   text-align: center;
 }
+
+/* New styles for the search bar and old searches */
+.search-container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 10px; /* Add space between the search bar and buttons */
+}
+
+.search-bar {
+  width: 30%; /* Make the search bar skinnier */
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.old-searches {
+  display: flex;
+  gap: 10px; /* Ensure space between buttons */
+}
+
+.old-searches button {
+  padding: 10px;
+  font-size: 0.9em;
+  background-color: rgb(123, 0, 224);
+  color: azure;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.old-searches button:hover {
+  background-color: rgb(103, 0, 204);
+}
