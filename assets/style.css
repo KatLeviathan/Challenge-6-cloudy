@@ -1,29 +1,41 @@
 .header {
-    background-color: rgb(123, 0, 224);
-    color: azure;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 1px;
-    padding: 1px;
-    padding-right: 300px;
-    text-align: right;
+  background-color: rgb(123, 0, 224);
+  color: azure;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 1px;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-
 .today {
-    border: 1px black solid;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    padding-left: 12px;
+  border: 1px solid black;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  padding: 12px;
+  font-size: 1.2em;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .five-days {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 2%;
-  } 
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2%;
+  gap: 10px;
+  flex-wrap: nowrap; /* Prevent wrapping */
+  overflow-x: auto;  /* Enable horizontal scrolling if needed */
+}
 
 .card {
-    flex-wrap: wrap;
-    padding: 10px;
-    background-color: blue;
-    margin: 1px;
-  }
+  flex: 1 1 18%;  /* Ensure each card takes equal width, adjust percentage as needed */
+  padding: 20px;
+  background-color: blue;
+  color: azure;
+  margin: 1px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  text-align: center;
+}
